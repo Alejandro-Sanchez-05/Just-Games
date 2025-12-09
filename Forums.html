@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Style.css">
+        <title>Forums</title>
+    </head>
+        <body>
+        <header>
+        <h1>Forums</h1>
+        <nav>
+            <ul class="horizontal-group">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="About Us.html">Our Story</a></li>
+                <li><a href="Games for Sale.html">Games for sale</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <h1>Discussion Posts</h1>
+        </main>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Trending</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="Forums-newest.html">Newest</a>
+                <a href="Forums-oldest.html">Oldest</a>
+            </div>
+        </div>
+        <script>
+            //little dropdown
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+               
+               
+               window.onclick = function(event) {
+                 if (!event.target.closest('.dropbtn')) {
+                   var dropdowns = document.getElementsByClassName("dropdown-content");
+                   for (var i = 0; i < dropdowns.length; i++) {
+                     var openDropdown = dropdowns[i];
+                     if (openDropdown.classList.contains('show')) {
+                       openDropdown.classList.remove('show');
+                     }
+                   }
+                 }
+               }
+             </script>
+             <main>
+              <h1>GOTY Discussion</h1>
+              <p>It's that time of the year again.</p>
+              <p>Wanna talk about all the nominees, or maybe just trashtalk people's votes? This is what you're looking for.</p>
+              <footer>pinned by mods</footer>
+             </main>
+             <main>
+              <h1>Silksong was just okay</h1>
+              <p>I'm so tired of people glazing the hell out of Silksong when it was deadass just okay.</p>
+              <h2>Join the discussion now</h2>
+             </main>
+             <main>
+              <h1>Is Subnautica 2 cooked?</h1>
+              <p>Idk if y'all heard, but apprantely Unknown Worlds' parent company put out a statement talking abot how
+                they're pretty much an AI company now. That's probably gonna affect the game, right?
+              </p>
+              <h2>Join the discussion now</h2>
+             </main>
+             <main>
+              <h1>Dispatch girls</h1>
+              <p>Invisigal or Blonde Blazer, are debate as old as time</p>
+              <h2>Join the dicussion now</h2>
+             </main>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <p>&copy; 2025 Just GamesLLC. all rights reserved</p>
+        </footer>
+    </body>
+</html>
